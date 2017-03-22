@@ -1,15 +1,26 @@
 body {
-	font-family: calibri;
 	background-image: url("../_imagens/mg-fundo.jpg");
 	background-repeat: none;
 	background-attachment: fixed;
 	background-size: 100%;
+	max-height: 100%; /* esta linha defini a ALTURA maxima do site */ 
+	max-width: 100%; /*esta linha defini a LARGURA maxima do site */
+	/* quando essas medidas estao em % elas vao se ajustar a quantidade de conteudo da pagina*/
 }
 
+/* formatação das fontes do site*/
 p {
+	font-family: calibri, arial; /*a opção arial apenas será usada se a pessoa nao tiver a fonte Calibri instalada na maquina*/
 	text-indent: 10px;
 	size: 10pt;
 }
+
+h1{	/* esse bloco de codigo vai ajudar a manter as coisas mais organizadas*/
+	font-family: calibri, arial;
+	font-size: 30pt;
+}
+
+/*formatação do cabeçalho da pagina*/
 
 header#cabecalho {
 	position: relative;
@@ -30,17 +41,22 @@ header#cabecalho nav#menu ul li{
 header#cabecalho nav#menu ul li a{
 	color: black;
 	text-decoration: none;
+	font-family: calibri, arial;
 }
+
+/*formatação da corpo da pagina*/
 
 section#secao {
 	padding: 10px;
-	width: 1200px;
-	background-color: white;
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto 5% auto 5%;
+	background-color: rgba(255,255,255,.7);/* essa linha esta no padrao RGBA de cor
+	os tres primeiros paramentros definem a cor e o ultimo defini a opacidade da cor, o que permite ver o que esta atrás dela*/
 }
 
+/*formatação das imagens*/
+
 section#secao img{
-	margin-left: auto;
-	margin-right: auto;
+	margin: auto 20% auto 20%; /* o margin deixa sua imagem centralizada com a section. Esta centralizado
+	POREM, ainda nao esta 100% responsivo(fora de margem quando diminui a tela.
+	com uma melhor desenvoltura do site da pra deixar otimo) */
 }
