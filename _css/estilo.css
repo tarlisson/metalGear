@@ -1,0 +1,46 @@
+body {
+	font-family: calibri;
+	background-image: url("../_imagens/mg-fundo.jpg");
+	background-repeat: none;
+	background-attachment: fixed;
+	background-size: 100%;
+}
+
+p {
+	text-indent: 10px;
+	size: 10pt;
+}
+
+header#cabecalho {
+	position: relative;
+	background-color: white;
+}
+
+header#cabecalho nav#menu ul{
+	position:absolute;
+	right: 0px;
+	top:0px;
+}
+
+header#cabecalho nav#menu ul li{	
+	display: inline;
+	margin-right: 7px;
+}
+
+header#cabecalho nav#menu ul li a{
+	color: black;
+	text-decoration: none;
+}
+
+section#secao {
+	padding: 10px;
+	width: 1200px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section#secao img{
+	margin-left: auto;
+	margin-right: auto;
+}
